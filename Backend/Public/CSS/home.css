@@ -1,0 +1,370 @@
+body {
+   background-color: var(--primary-500);
+}
+
+#root {
+   color: var(--text);
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   background-color: var(--primary-500);
+}
+
+.nav-side-bar {
+   width: 20vw;
+   max-width: 300px;
+   min-width: 200px;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--primary-300);
+}
+
+.outer-container {
+   background-color: azure;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.logo,
+.menu {
+   width: 100%;
+   height: 50%;
+}
+
+a {
+   text-decoration: none;
+   color: var(--text);
+}
+
+a:hover {
+   color: var(--text);
+   text-decoration: none;
+}
+
+.logo {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.menu > a {
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+   background-color: var(--primary-500);
+   width: 100%;
+   height: 50px;
+   padding-left: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: flex-start;
+   transition: all 0.15s linear;
+}
+
+.menu > a:hover,
+.sidebar-selected {
+   background-color: rgba(0, 0, 0, 0.1);
+}
+.heading {
+   width: clamp(500px, 80vw, 1200px);
+   padding-bottom: 50px;
+}
+
+.team {
+   background-color: var(--primary-400);
+   width: clamp(500px, 80vw, 1200px);
+   height: max(500px, 80vh);
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+   overflow: auto;
+}
+
+.team-nav {
+   background-color: var(--primary-300);
+   display: flex;
+   flex-direction: row-reverse;
+   align-items: center;
+   padding-left: 50px;
+   border-radius: 5px 5px 0px 0px;
+   height: 12.5%;
+}
+
+.team-title {
+   margin-right: auto;
+}
+
+.team-nav > a {
+   height: 100%;
+   width: 100px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   justify-self: flex-end;
+   box-shadow: 1px 0px 0px rgba(0, 0, 0, 0.25);
+   transition: all 0.15s linear;
+}
+.team-nav > a:first-child {
+   box-shadow: none;
+}
+
+.team-nav > a:hover,
+.team-nav-selected,
+.polls-menu > a > .poll-question-container:hover {
+   background-color: var(--primary-500);
+}
+
+.polls-menu {
+   overflow: auto;
+   width: 100%;
+   height: 87.5%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.polls-menu > a {
+   display: flex;
+   flex-direction: row;
+   width: 90%;
+   height: 70px;
+   background-color: var(--primary-300);
+   border-radius: 5px;
+   margin-top: 25px;
+   margin-bottom: 25px;
+}
+
+.polls-menu > a > .flag {
+   width: 5%;
+   height: 70px;
+   border-radius: 5px 0px 0px 5px;
+}
+.polls-menu > a > .poll-question-container {
+   border-radius: 0px 5px 5px 0px;
+   padding-left: 30px;
+   width: 95%;
+   height: 70px;
+   display: flex;
+   align-items: center;
+   justify-content: start;
+   transition: all 0.15s linear;
+}
+
+.fail {
+   background-color: var(--warning-100);
+}
+.success {
+   background-color: var(--success-100);
+}
+
+.poll-container {
+   padding-top: 5%;
+   margin-left: 10%;
+   padding-right: 10%;
+   padding-bottom: 5%;
+   height: 87.5%;
+   overflow: auto;
+}
+
+.rad-label {
+   display: flex;
+   align-items: center;
+
+   border-radius: 10px;
+   padding: 14px 16px;
+   margin: 10px 0;
+
+   cursor: pointer;
+   transition: 0.3s;
+}
+
+.rad-label:hover,
+.rad-label:focus-within {
+   background: hsla(0, 0%, 80%, 0.14);
+}
+
+.rad-input {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 1px;
+   height: 1px;
+   opacity: 0;
+   z-index: -1;
+}
+
+.rad-design {
+   width: 22px;
+   height: 22px;
+   border-radius: 10px;
+   background: linear-gradient(
+      to right bottom,
+      var(--primary-100),
+      var(--primary-200)
+   );
+   position: relative;
+}
+
+.rad-design::before {
+   content: "";
+   display: inline-block;
+   width: inherit;
+   height: inherit;
+   border-radius: inherit;
+   background: hsl(0, 0%, 90%);
+   transform: scale(1.1);
+   transition: 0.3s;
+}
+
+.rad-input:checked + .rad-design::before {
+   transform: scale(0);
+}
+
+.rad-text {
+   color: black;
+   opacity: 0.5;
+   margin-left: 14px;
+   transition: 0.3s;
+}
+
+.rad-input:checked ~ .rad-text {
+   color: var(--text);
+   opacity: 1;
+}
+
+.button {
+   color: var(--button-text);
+}
+
+.dashboard {
+   background-color: var(--primary-400);
+   width: clamp(500px, 80vw, 1200px);
+   height: max(500px, 80vh);
+   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+   border-radius: 10px;
+   overflow: auto;
+}
+
+.inner-container {
+   height: 87.5%;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: column;
+   width: 100%;
+}
+.inner-container > * {
+   width: 90%;
+}
+
+.inner-container > a {
+   display: flex;
+   align-items: center;
+   height: 70px;
+   padding-left: 20px;
+   background-color: var(--primary-300);
+   border-radius: 5px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   transition: all 0.15s linear;
+}
+.inner-container > a:hover {
+   background-color: var(--primary-500);
+}
+
+.media-list {
+   width: 90%;
+   height: 400px;
+   display: flex;
+   flex-direction: row;
+}
+
+.media-list-items {
+   padding-left: 20px;
+   padding-right: 20px;
+   width: 33.33%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.media-list-items > img,
+.media-list-items > audio,
+.media-list-items > video {
+   width: 100%;
+}
+
+.notifications {
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+select {
+   outline: 0;
+   border: 0;
+   box-shadow: none;
+   width: 120px;
+   height: 50px;
+   margin-right: 15px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   background-color: var(--primary-200);
+   color: var(--button-text);
+   padding-right: 5px;
+   padding-left: 5px;
+   transition: 0.3s;
+   text-transform: capitalize;
+}
+
+#expiry-value {
+   height: 50px;
+   width: 50px;
+   margin-right: 5px;
+   padding-right: 5px;
+   padding-left: 5px;
+   background-color: var(--primary-200);
+   color: var(--button-text);
+   border-radius: 5px;
+}
+
+select:hover {
+   background-color: var(--primary-100);
+}
+
+.select-option {
+   background-color: var(--primary-300);
+   color: var(--text);
+}
+
+.create-options-container {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   width: 315px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.create-options-container > input {
+   height: 30px;
+   width: 200px;
+   background-color: var(--primary-300);
+   padding-left: 5px;
+}
+
+.create-poll > button {
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+input [audio] {
+   width: 300px;
+}

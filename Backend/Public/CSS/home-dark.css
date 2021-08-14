@@ -1,0 +1,68 @@
+:root {
+   --text: white;
+   --text-inverted: black;
+}
+
+.nav-side-bar {
+   background-color: #141414;
+}
+
+.menu > a {
+   background-color: #323232;
+}
+
+.outer-container {
+   background-color: #050505;
+}
+
+.input-field > input {
+   background-color: #323232;
+}
+
+.team {
+   background-color: #141414;
+}
+
+.team-nav {
+   background-color: #323232;
+}
+
+.team-nav > a:hover {
+   background-color: #141414;
+}
+
+.team-nav-selected {
+   background-color: #141414;
+}
+.polls-menu > a > .poll-question-container {
+   background-color: #323232;
+}
+
+.polls-menu > a > .poll-question-container:hover {
+   background-color: var(--primary-300);
+   color: var(--text-inverted);
+}
+
+.rad-text {
+   color: var(--text);
+}
+.inner-container {
+   background-color: #141414;
+}
+
+.inner-container > a {
+   background-color: #323232;
+}
+
+.inner-container > a:hover {
+   background-color: var(--primary-300);
+   color: var(--text-inverted);
+}
+
+.dashboard {
+   background-color: #141414;
+}
+
+details summary {
+   border-top: var(--text);
+}

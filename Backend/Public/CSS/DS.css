@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+body {
+   height: 100vh;
+}
+:root {
+   --text: #000000;
+   --text-inverted: white;
+   --primary-100: #28a315;
+   --primary-200: #21ba45;
+   --primary-300: #e1e1e1;
+   --primary-400: #f4f5f7;
+   --primary-500: #ffffff;
+   --helper-text: 14px;
+   --h1: 1.8rem;
+   --paragraph: 1rem;
+   --helpertext: 0.8rem;
+   --warning-100: #e1c542;
+   --success-100: #529e66;
+   --button-text: white;
+}
+
+a {
+   cursor: default;
+}
+
+.helpertext {
+   font-size: var(--helpertext);
+}
+
+input,
+button,
+submit {
+   border: none;
+}
+
+button,
+a {
+   text-decoration: none;
+   transition: all 0.1s ease-in-out;
+   color: #007bff;
+}
+
+.button {
+   color: var(--button-text);
+   background-color: var(--primary-200);
+   border-radius: 5px;
+   width: 150px;
+   height: 50px;
+}
+
+.small {
+   width: 100px;
+   height: 33.33px;
+}
+
+button:hover:enabled {
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+   background-color: var(--primary-100);
+}
+button:disabled {
+   opacity: 0.5;
+}
+
+a:hover {
+   color: #005abb;
+   text-decoration: underline;
+}
+
+h1 {
+   font-size: 1.8rem;
+}
+
+* {
+   font-family: "Poppins";
+}
+
+h2 {
+   margin: 0px;
+   padding: 0px;
+   font-size: 1.6rem;
+}
+
+h3 {
+   font-size: 1.4rem;
+}
+
+h4 {
+   font-size: 1.2rem;
+}
+
+h5 {
+   font-size: 1.1rem;
+}
+
+p {
+   font-size: 1rem;
+}
+
+.input-field {
+   display: flex;
+   flex-direction: column;
+   padding-bottom: 20px;
+   padding-top: 20px;
+}
+
+.input-field > label {
+   font-size: var(--helper-text);
+}
+
+.input-field > input {
+   padding-left: 10px;
+   color: var(--text);
+   font-size: var(--paragraph);
+   width: 315px;
+   height: 52px;
+   border-radius: 2px;
+   background-color: var(--primary-300);
+}
+
+.dashboard-details {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   height: 30px;
+}
+
+.dashboard-details > span {
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+.dashboard-details > span:first-child {
+   font-weight: bolder;
+}
+
+details summary {
+   width: 100%;
+   font-weight: bolder;
+   padding: 0.5rem 0;
+   position: relative;
+   cursor: pointer;
+   font-size: var(--h4);
+   list-style: none;
+   border-top: 1px solid black;
+}
+
+details {
+   padding-bottom: 10px;
+}
+
+details summary:after {
+   content: "+";
+   color: black;
+   position: absolute;
+   font-size: var(--h4);
+   font-weight: bolder;
+   line-height: 0;
+   margin-top: 0.75rem;
+   right: 0;
+   font-weight: 200;
+   transform-origin: center;
+   transition: 200ms linear;
+}
+details[open] summary:after {
+   transform: rotate(45deg);
+   font-size: var(--h4);
+}
+details summary {
+   outline: 0;
+}
+details > p {
+   font-size: 0.95rem;
+   margin: 0 0 1rem;
+   padding-top: 1rem;
+}
+
+.bar {
+   width: max(60%, 600px);
+}

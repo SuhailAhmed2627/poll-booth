@@ -1,0 +1,28 @@
+body {
+   background-color: var(--primary-400);
+}
+
+#root {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   background-color: var(--primary-400);
+}
+
+#root > * {
+   padding: 10px;
+}
+
+.button-large {
+   color: var(--text);
+   background-color: var(--primary-200);
+   border-radius: 10px;
+   width: 200px;
+   height: 66.67px;
+}
+
+p {
+   color: var(--text);
+}
