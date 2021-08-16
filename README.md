@@ -1,4 +1,4 @@
-# Poll Booth⚡
+# Poll Booth 👕
 
 Poll Booth is a user management and interaction Web App made with MERN stack, REST APIs and lots of Love❤️.
 
@@ -12,6 +12,8 @@ Poll Booth is a user management and interaction Web App made with MERN stack, RE
 - [Mongoose 🍃](https://mongoosejs.com/)
 - [Parcel 📦](https://parceljs.org/)
 - [Insomnia 🔮](https://insomnia.rest/)
+
+This is my first MERN stack project. Some duct-tape fixes are present due to lack of time to finish the task in Hackermode. Wrote 2,500+ lines of code, Loved the Experience of making a Full Stack project.
 
 ## Installation
 You must have [Node.js](https://nodejs.org/en/) and [MongoDB](https://www.mongodb.com/) to run this Web App
@@ -47,4 +49,4 @@ cd ./Frontend
 npm run dev
 ```
 
-Thanks to my most useful resource... The Internet❤️.
+Thanks to my most useful resource... The Internet❤️
