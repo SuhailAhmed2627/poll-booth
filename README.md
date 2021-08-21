@@ -27,12 +27,12 @@ Use the package manager [npm](https://www.npmjs.com/) to Setup the Frontend and 
 To setup Backend:
 ```bash
 cd ./Backend
-npm install
+npm i
 ```
 To setup Frontend:
 ```bash
 cd ./Frontend
-npm install
+npm i
 ```
 
 
